@@ -1,0 +1,233 @@
+{% if user.is_authenticated %}
+
+<form class="border">
+    <div class="form-row">
+      <label for="tool">Select a Tool:</label>
+      <select id="func" name="func" class="larger-font" onchange="func_captured()">
+        {%for func in funcs%}
+            <option value="{{func.name}}">{{func.name}}</option>
+        {%endfor%}
+      </select>
+    </div>
+    <div class="form-row">
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+          </tr>
+          <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+          </tr>
+          <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form-row">
+      <label for="store">Select a Store From:</label>
+      <select id="store_from" name="store_from" class="larger-font" onchange="store_from_captured()" >
+
+      </select>
+    </div>
+    <div class="form-row">
+        <label for="quantity">Remain Quantity:</label>
+        <label type="text" id="r_quantity" name="r_quantity">
+      </div>
+    <div class="form-row">
+        <label for="store">Select a Store To:</label>
+        <select id="store_to" name="store_to" class="larger-font">
+            {%for store in stores%}
+                <option value="{{store.name}}">{{store.name}}</option>
+            {%endfor%}
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity"  value="1"/>
+      </div>
+    <input type="button" value="Submit" onclick="do_transfer()">
+
+
+    <div class="form-row hidden" id="datadumper">
+        <label for="store">Select a Store To:</label>
+        <select id="dists" name="dists" class="larger-font">
+            {%for dist in dists%}
+                <option value="{{dist.store}}|{{dist.tool}}|{{dist.quantity}}">{{dist.tool}}</option>
+            {%endfor%}
+        </select>
+      </div>
+
+  </form>
+
+
+<script>
+    let store_from = []
+    let quantity_available = []
+    const r_quantity_label = document.getElementById("r_quantity")
+    const quantity_to_transfer = document.getElementById("quantity")
+    
+    function func_captured(){
+      let funcname = document.getElementById('func').value
+      
+      store_from.splice(0, store_from.length);
+      quantity_available.splice(0, quantity_available.length);
+
+      const stores_from = document.getElementById('store_from')
+        
+
+        while (stores_from.options.length > 0) {
+          stores_from.remove(0);
+        }
+
+    }
+
+    
+    function tool_captured(){
+        let toolname = document.getElementById('tool').value
+
+        store_from.splice(0, store_from.length);
+        quantity_available.splice(0, quantity_available.length);
+        
+        const stores_from = document.getElementById('store_from')
+        const stores = document.getElementById('store_to').options;
+        const dists = document.getElementById('dists').options;
+
+        for (let i = 0; i < dists.length; i++) {
+            let option = dists[i].value;
+            if(option.includes(toolname)){
+                console.log(option);
+                let arr = option.split('|')
+                console.log(arr)
+                store_from.push(arr[0])
+                quantity_available.push(arr[2])
+            }
+        }
+        console.log(store_from)
+        for(let i = 0; i < store_from.length;i++){
+            const option = document.createElement('option');
+            option.value = store_from[i];
+            option.text = store_from[i];
+            stores_from.add(option);
+        }
+        r_quantity_label.textContent = quantity_available[0]
+        //alert(myData)
+    }
+    function store_from_captured(){
+        let index = store_from.indexOf(document.getElementById('store_from').value)
+        console.log(index , quantity_available , store_from)
+        r_quantity_label.textContent = quantity_available[index]
+    }
+    function do_transfer(){
+        let toolname = document.getElementById('tool').value
+        let quant_availbale = r_quantity_label.textContent
+        let quant_transfer = quantity_to_transfer.value
+        const store_to = document.getElementById('store_to').value;
+        const store_from = document.getElementById('store_from').value;
+
+        console.log("availab : " + quant_availbale ,  "trans :  " + quant_transfer)
+        if(quant_availbale < quant_transfer || store_from == store_to){
+            alert("يجب ان تكون الكمية المنقول اقل من او تساوي الكمية المتاحة ويجب ان تتم عملية النقل بين مخزنين مختلفين")
+        }
+        else{
+            console.log(({ 'store_from': store_from , 'store_to' :store_to , 'tool' :toolname , 'quantity':quant_transfer }))
+            fetch("/doTransfer" ,{ method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(({ 'store_from' : store_from , 'store_to' :store_to , 'tool' :toolname , 'quantity':quant_transfer}))
+                })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error));
+        }
+    }
+
+</script>
+
+<style>
+
+#datadumper {
+  display: none;
+}
+
+.border {
+  border: 3px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select, input[type="text"] {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: Arial, sans-serif;
+}
+    
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+    
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+    
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+    
+    /* Optional: Hover effect */
+  tr:hover {
+    background-color: #f5f5f5;
+}
+</style>    
+{%endif%}

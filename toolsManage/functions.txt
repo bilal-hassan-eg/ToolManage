@@ -1,0 +1,232 @@
+Bullet M2 Titanium|7
+LiteBeam 5AC Gen2|17
+LiteBeam M5|0
+NanoBeam 5AC Gen2|2
+NanoBeam M5 19|3
+NanoStation 5AC|6
+NanoStation M2|13
+NanoStation M5|56
+NanoStation loco M2|6
+NanoStation loco M5|18
+PicoStation M2|2
+PowerBeam 5AC 400|27
+PowerBeam 5AC 500|5
+PowerBeam 5AC 620|12
+PowerBeam M5 400|23
+Rocket 5AC Lite|1
+Rocket M5|4
+TP-Link TL-WA7210N|14
+airFiber 60 LR|6
+NanoStation M2 DD-WRT|39
+TP-LINK CPE210|11
+PicoStation M2 DD-WRT|4
+Rocket M2 DD-WRT|6
+TP-LINK-CPE220|18
+Router Phicomm K2|20
+LG7000|4
+EdgeSwitch 10XP|15
+EdgePoint S16|1
+RouterOS CCR1009-7G-1C-1S+|3
+RouterOS CCR1036-8G-2S+|1
+RouterOS RB1100AHx2|0
+RouterOS RB3011UiAS|2
+RouterOS RB750Gr3|29
+RouterOS RB941-2nD|10
+RouterOS RB951-2n|2
+TP-LINK TL-WR840N v6|20
+TP-Link TL-WR841ND v5|23
+TP-Link TL-WR940ND v6|11
+TP-LINK Archer c20|4
+RouterOS 750 r2|2
+Netis N2|8
+UNIFI INDOOR 2.4|1
+UNIFI OUTDOOR|1
+تحويلة 24 v|10
+BOX|0
+سلك نت وكهرباء|19
+سلك نت|8
+سوتش|0
+دراع|17
+برج حديد|26
+شاحن|1
+POE|8
+بطارية|1
+خلايا شمسية|0
+انتينه|0
+UPS|1
+ترنس كهرباء|0
+ساعة كهرباء|0
+طبلون تحكم|2
+مكيف|1
+اثاث|1
+سيرفر Litexs|1
+ادوات كهربائية|0
+سولر|0
+حامل خلايا|20
+Adapter|41
+TP-Link TL-WR841N v14|11
+RouterOS RB1100AHx4|1
+علب بلاستيك|27
+'طبلون 50*70*26|3
+'طبلون 50*41|0
+'طبلون سعة 13|0
+'طبلون 50*40|0
+'سلك نت كات ستة مستخدم|0
+'تحويلات بطارية اتومتك12 بسعر 10|0
+'بطارية 9 A|0
+'صندوق حديد|11
+شاحن 12v-20 A|6
+200 A بطارية عادية|14
+شاحن بطارية 12v- 10A|8
+بطارية نيرادا  120A|7
+بطارية عادية 100A|10
+طبلون كهرباء خارجي كبير|0
+جهاز لوكس بور ks|0
+بطاريات ليثيوم kw 7.5|3
+بطاريةA 200لوتش|1
+'Ups AXPERT- VM-2-3KW|1
+'Ups AXPERT-MKS- VM-1-KW|10
+'Ups AXPERT- MKS-3KW|9
+'Ups AXPERT- VM-2-5KW|0
+'Ups SNMP|0
+'Ups 3KVA on Line TESO+1000|2
+'Ups 1KVA on Line TESO+1000|1
+'Ups 6KVA on Line TESO+1000|1
+'Ups AXPERT- MKS-5KW|1
+'UPS Deye Sun-5K-SG04LP1-E4|1
+'امان حياه|0
+'امان نص اوتماتيك|3
+'امان نص اتوماتيك مجوز|0
+'امان 80/1 DC|0
+'قلاب A63 TOSUN|1
+تحويلات بطارية عادية12 بسعر5|0
+تحويلة بطارية 24بسعر 35|6
+'ترنس  6k|2
+'ترنس 1k|6
+'ترنس 8k|2
+'ترنس 3 كيلو|1
+'ترنس 2k|3
+'بطارية نيرادا 200 امبير|5
+'ترنس 4k|1
+'ساعه انتر فولت ديجتال|0
+خلايا شمسية 415w|3
+'خلايا شمسية 340W|0
+خلايا شمسية 330W|4
+خلايا شمسية 320W|1
+خلايا شمسية 323W|1
+خلايا شمسية 225W|2
+'خلايا شمسية 150W|11
+خلايا شمسية 40W|3
+خلايا شمسية 260 w|2
+ساعه كهرباء عادية|3
+ساعة كهرباء ديجتال|9
+'سلك كهرباء|2
+سلك نت كات ستة عادي|5
+'Box 40*60 حديد|3
+ساعة  ديجيتل A|0
+راك|2
+'Solar contraler 12/24-20A|13
+' Switch 8p 10-100|40
+'الانتينا الاومني m2|3
+'الانتينا سيكتور m2|5
+'الانتينا هايبر m2|9
+رلية اتومتك عادي|8
+'مثلث كهرباء|14
+'Box 30*50 حديد|1
+TP-LINK 842 CHINA|3
+DlinkDSL-225|9
+TP-Link TL-WR841ND v9|3
+TP-Link TL-WR841ND v12|6
+TP-Link TL-WR841N v12|0
+'Box 60*60*40حديد|2
+TP-Link TL-WR841ND v7|2
+Box حديد 60*100*40|1
+TP-LINK HC220-G1|5
+RouterOS RB760iGS|3
+TP-LINK TL-WR841N v8|1
+TP-Link TL-WR941ND v6|1
+TP-LINK TL-WA801ND|1
+RouterOS RB750GL|1
+'طبلون امان سعة 12|2
+'طبلون امان سعة 8|2
+'طبلون امان سعة|0
+طبلون خارجي30*20|1
+طبلون خارجي 30*40|6
+طبلون خارجي 40*50|2
+طبلون خارجي 40*60|2
+طبلون خارجي 60*80|0
+طبلون خارجي 50*70|3
+' 1A --25 Aامان نص اتومتك|12
+40 DC امان نص اتومتك|4
+'DC80  امان نص اتومتك|3
+A40 امان مجوز|6
+'63 A امان مجوز|0
+'80 A امان مجوز|1
+'55 A امان حياة|1
+'15 A امان حياة|1
+'جهاز لوكس بور ks|0
+'خلايا شمسية 545w|3
+فيشة خارجية مجوز|0
+'فيشة خارجية ثلاثية|1
+'فيشة  خارجية رباعية|0
+فيشة  خارجية رباعية|0
+'UPS هندي|1
+'UPS تايواني|1
+'ساعة امبير فولت عادية|1
+'ساعة كهرباء ديجتال|3
+'ساعة تحكم ديجتل|1
+ساعة سبت|0
+'لمبة اشارة عادي|0
+سلك 2.5 -3خط شعاري|0
+سلك1.5 -3 خط شعاري|0
+سلك 2.5 - 2خط اسود|1
+سلك075 شفاف|0
+سلك 6  ملم -2 خط مصمط|1
+سلك 4 ملم -2 خط مصمط|0
+فيشة ذكر + فيشة انثى|0
+سلاك بطارية 16 ملم شعاري|1
+سلاك بطارية 10 ملم شعاري|0
+سلك 6 ملم شعاري|5
+'سلك 6 ملم DC شعاري|0
+TP-Link  Switch 8v 100-1000|3
+5 K ترنس|3
+Tenda 1500 A|8
+سلك تلدور كات خمسة|3
+سلك تلدور كات ستة|1
+صحن دش +وقنوات|1
+اسلاك دش|1
+Cisco Switch16v 100-1000|1
+كاميرا ip|2
+on olin ups 600w|2
+امان نص اتومتك 63 A|1
+قلاب اتومتك شفاف|2
+صندوق حديد40*60*60|2
+Edeg Power-ES-24-500w|2
+Power EP-54v-150w|1
+انتينا سيكتور m5|1
+سلك 1.5 -2خط شعاري|1
+Router-D -Link256|0
+AirfiberX4|2
+TP-LINK-Switch-Manage|1
+GPK-Single-Mode-1G|3
+converter-Fiber2Ethernet-Mikrotik1G|1
+كابل-فايبر-اوبتيك12شعرة|1
+كابل-فايبر-اوبتيك4 شعرات|1
+F.outdoor Fiber optic joint|1
+F.Fiber Patch Panl 24/48 port|1
+F.Optical Fiber ODF lc 8/16 Port|1
+F.Fiber Duplex Adapter LC-LC|1
+F.Fiber Cable Tray|1
+F.Fiber pigtail LC|1
+F.Fiber optic Splice|1
+Box-Fiber|1
+Rocket M2 UBNT|1
+CISCO SWITCH 8-100 PORT|1
+CISCO SWITCH 8-1000 PORT|3
+COMFAST E314N|1
+Bullet 2HP|1
+Ups LUX POWER-5KW|4
+ups on line 360 w|2
+Mini smart switch|2
+EHAkl-EHCT -63 relay|1
+Box-80*60*26|0
